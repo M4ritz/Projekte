@@ -1,0 +1,33 @@
+/*----- Tag's -----*/
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color: #333;
+
+    margin: 0;
+    padding: 0;
+
+    image-rendering: pixelated;
+
+    overflow: hidden;
+}
+/*----- ID's -----*/
+#game{
+    width: 98vw;
+    height: 98vh;
+
+    margin: 1vh 1vw 1vh 1vw;
+
+    outline: 1px solid #fff;
+}
+#clock{
+    margin: 20vh 10vw 1vh 10vw;
+
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+/*----- CLASSES -----*/ 
+

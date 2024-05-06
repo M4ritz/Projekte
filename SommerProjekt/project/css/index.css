@@ -1,0 +1,46 @@
+/*----- Tag's -----*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*----- ID's -----*/
+#linkToGame{
+    /*Height from top to Buttons*/
+    margin-top: 40vh;
+}
+#JSToShowHelp{
+
+}
+
+/*----- CLASSES -----*/
+.button{
+    cursor: pointer;
+
+    text-align: center;
+
+    /* Button Backgroundcolor */
+    background-color: rgb(0, 0, 0);
+
+    /* Button Text*/
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+
+    /* Button Margin */
+    margin: 1vw;
+    margin-left: 45%;
+    margin-right: 45%;
+
+    /* Button Padding */
+    padding: 1vw;
+
+    /* Button Settings */
+    border-radius: 2px;
+}
+.button:hover{
+    /* Button Backgroundcolor */
+    background-color: rgb(92, 92, 92);
+}

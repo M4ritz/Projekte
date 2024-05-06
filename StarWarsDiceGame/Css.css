@@ -1,0 +1,332 @@
+@font-face {
+    font-family: starWars;
+    src: url("./Starjedi.ttf");
+}
+/* Direct*/
+a{
+    text-decoration: none;
+}
+h4{
+    padding-top: 25vh;
+}
+body{
+    text-align: center;
+    margin: 0;
+    background: url("./multimedia/space.jpg");
+    height: 100vh;
+    background-size: cover;
+    font-family: starWars;
+    overflow: hidden;
+}
+div{
+    margin: 1vw;
+    padding: 1vw;
+}
+h2{
+    margin-top: -1.5vw;
+}
+h1,h2{
+    animation: loop 2s ease 3s infinite;
+}
+h3{
+    background-color: rgba(55, 61, 129, 0.522);
+    margin: 0;
+    margin-top: -5.4%;
+    margin-left: -5.4%;
+    width: 100%;
+    margin-bottom: 1vw;
+    border-radius: 1vw 1vw 0 0;
+    padding: 1vw;
+}
+/*Animations*/
+@keyframes startAnimation{
+    0%{
+        transform: scale(450%);
+        rotate: 0deg;
+        margin-left: 37vw;
+    }
+    25%{
+        transform: scale(450%);
+        margin-left: 37vw;
+        rotate: 0deg;
+    }
+    100%{
+        transform: scale(120%);
+        rotate: 15deg;
+        }
+}
+@keyframes hideButton{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes loop{
+    0%{
+        transform: scale(102%);
+    }
+    33%{
+        transform: scale(100%);
+    }
+    66%{
+        transform: scale(102%);
+    }
+    100%{
+        transform: scale(102%);
+    }
+}
+
+/*id*/
+#rG{
+    background-size:contain;
+    background-repeat: no-repeat ;
+    box-shadow: 0px 0px 30px 10px #0ff;
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/good/rG.png");
+}
+#bG{
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/good/bG.png");
+    background-size: contain;
+    box-shadow: 0px 0px 30px 10px #0ff;
+    background-repeat: no-repeat ;
+}
+#cG{
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/good/cG.png");
+    background-size: contain;
+    box-shadow: 0px 0px 30px 10px #0ff;
+    background-repeat: no-repeat ;
+}
+#rB{
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/bad/rB.png");
+    background-size: contain;
+    box-shadow: 0px 0px 30px 10px rgb(255, 34, 0);
+}
+#bB{
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/bad/bB.png");
+    background-size: contain;
+    box-shadow: 0px 0px 30px 10px rgb(255, 34, 0);
+}
+#cB{
+    background-image: linear-gradient(11deg, rgb(75, 75, 75) 70%, rgba(0,0,0,0) 30%),url("./multimedia/fighter/bad/cB.png");
+    background-size: contain;
+    box-shadow: 0px 0px 30px 10px rgb(255, 34, 0);
+}
+#title{
+    margin: 0;
+    background:white;
+}
+#chooseCharakter{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 15.5vw 15.5vw 15.5vw 5vw 15.5vw 15.5vw 15.5vw;
+    width: 100vw;
+    height: 80vh;
+}
+#game{
+    background-image: url("./multimedia/metal.jpeg");
+    background-size: cover;
+}
+#main{
+    display: grid;
+    grid-template-columns: 19.5vw 9.5vw 69vw;
+    
+}
+#head{
+    animation: startAnimation 3s ease none 1 ;
+    
+    transform: scale(120%);
+    background-color: rgba(255, 255, 255, 0.31);
+    
+    text-align: center ;
+    border-radius: 1vw;
+    width: 20vw;
+    height: 15vh;
+    padding: 0.5vw;
+    margin-top: 34vh;
+    margin-left: 2vw;
+    rotate: 15deg;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#fightButton{
+    background-color: black;
+    color: white;
+    height: 5vh;
+    border-radius: 1vw;
+}
+#fightButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#button{
+    position:absolute;
+    right: 5vw;
+    background-image: url("./multimedia/helpClone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 40px 20px rgb(255, 255, 255);
+    width: 4.9vw;
+    height: 8.6vh;
+    border-radius:50vw;
+    font-size: 0.9em;
+    transition: 1s all;
+    opacity: 0.8;
+}
+#clone{
+    position:absolute;
+    right: 5vw;
+    background-image: url("./multimedia/CloneTroop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 40px 20px rgb(255, 255, 255);
+    width: 4.9vw;
+    height: 8.6vh;
+    border-radius:50vw;
+    font-size: 0.9em;
+    transition: 1s all;
+    opacity: 0.9;
+}
+#clone:hover{
+    scale: 110%;
+    opacity: 1;
+    cursor: pointer;
+    rotate: 15deg;
+}
+#button:hover{
+    scale: 110%;
+    opacity: 1;
+    cursor: pointer;
+    rotate: 15deg;
+}
+#sign{
+    margin-left: -11vw;
+}
+#character{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    height: 60vh;
+    border-radius: 1vw;
+}
+#helpOutput{
+    animation-name: hideButton;
+    animation-duration: 3s;
+    height: 10vh;
+    width: 49vw;
+    margin-left: auto;
+    animation-duration: ease;
+    background-color: rgba(240, 248, 255, 0.5);
+    display: flex;
+    border-radius: 0.5vw;
+}
+#special{
+    animation-name: hideButton;
+    animation-duration: 3s;
+    height: 10vh;
+    width: 49vw;
+    margin-left: auto;
+    animation-duration: ease;
+    background-color: rgba(240, 248, 255, 0.5);
+    display: flex;
+    border-radius: 0.5vw;
+}
+#back{
+    background-image: url("./multimedia/goBack.png");
+    height: 8vh;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.502);
+    border-radius: 1.8vw;
+    display: none;
+    transition: 1s;
+}
+.gameText{
+    margin-top: 30vh;
+}
+#back:hover{
+    background-color: rgb(255, 255, 255);
+}
+#output{
+    background-color: red;
+}
+#finish{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30vw;
+    margin-top: 10vh;
+    border-radius: 1vw;
+    font-size: large;
+}
+/*class*/
+.playAgain{
+    background-color: black;
+    color: white;
+}
+.playAgain:hover{
+    cursor: pointer;
+}
+.hp{
+    color: red;
+}
+.at{
+    color: yellow;
+}
+.sp{
+    color: greenyellow;
+}
+.lockIn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.choose{
+    background-color: rgb(130, 142, 156);
+    height: 65vh;
+    border-radius: 1vw;
+    transition: all 0.25s;
+}
+.choose:hover{
+    transform: scale(105%);
+}
+.content{
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.428);
+    color: white;
+    border-radius: 1vw;
+    text-decoration: none;
+    width: 19.5vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+}
+
+.link{
+    margin-top: 60vh;
+    transform: rotate(15deg);
+    text-decoration: none;
+    width: 15vw;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: 2vw;
+    transition: all 0.5s;
+}
+.link:hover{
+    transform: scale(110%) rotate(15deg);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    
+}
+.gamesense{
+    background-image: url('./multimedia/background.jpeg');
+    background-size: contain;
+}
+.story{
+    background-image: url('./multimedia/background.jpeg');
+    background-size: contain;
+}
+.text{
+    text-align: left;
+}

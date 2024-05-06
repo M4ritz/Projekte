@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieCenter</title>
+    <script src="./script/password.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url('./loginBackground.png');
+            background-size: cover;
+        }
+        #form{
+            margin-left: 45vw;
+            margin-top: 40vh;
+            padding: 1vw;
+            background-color: rgba(255, 255, 255, 0.486);
+            border-radius: 3px;
+            color: black;
+            font-family: sans-serif;
+            width: 10vw;
+            text-align: center;
+        }
+        #submit{
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 0.5vw;
+        }
+        #errorCodes{
+            margin-top: 1vw;
+            padding: 0.5vw;
+            background-color: red;
+            border-radius: 2px;
+        }
+    </style>
+    <form id="form">
+        <div>Name:</div>
+        <br>
+        <input id="uName" type="text">
+        <br>
+        <br>
+        <div>Password:</div>
+        <br>
+        <input id="uPassword" type="password">
+        <br>
+        <br>
+        <div id="submit" onclick="login()">Submit</div>
+        <div id="errorCodes"></div>
+    </form>
+</body>
+</html>

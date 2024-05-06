@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JavaScript.js" defer></script>
+    <link  rel="stylesheet" href="./CSS.css" >
+</head>
+<body>
+    <header><div></div><div id="cO">O: 0</div><div></div><div>The Game</div><div></div><div id="cX">X: 0</div><div></div></header>
+    <div id="themeSelector">
+        <div id="head"><h1>Choose your Theme</h1></div>
+        <div id="themeMain">
+            <div class="theme" id="theme1" onclick="cyberPunk()">.</div>
+            <div></div>
+            <div class="theme" id="theme2" onclick="lego()">.</div>
+            <div></div>
+            <div class="theme" id="theme3" onclick="christmas()">.</div>
+            <div class="theme" id="theme4" onclick="japan()">.</div>
+            <div></div>
+            <div class="theme" id="theme5" onclick="nature()">.</div>
+            <div></div>
+            <div class="theme" id="theme6" onclick="programming()">.</div>
+        </div>
+        <a href="./start.html"><div id="goBack"><img src="./Multimedia/goBack.png" style="width: 7vw;transform: rotate(180deg);"></div></a>
+    </div>
+    <div id="game">
+        <div id="circle"></div>
+        <div id="main">
+            <div id="box1" class="box" onclick="checkStatus(this,0,0)"></div>
+            <div id="box2" class="box" onclick="checkStatus(this,0,1)"></div>
+            <div id="box3" class="box" onclick="checkStatus(this,0,2)"></div>
+            <div id="box4" class="box" onclick="checkStatus(this,1,0)"></div>
+            <div id="box5" class="box" onclick="checkStatus(this,1,1)"></div>
+            <div id="box6" class="box" onclick="checkStatus(this,1,2)"></div>
+            <div id="box7" class="box" onclick="checkStatus(this,2,0)"></div>
+            <div id="box8" class="box" onclick="checkStatus(this,2,1)"></div>
+            <div id="box9" class="box" onclick="checkStatus(this,2,2)"></div>
+        </div>
+        <div id="cross"></div>
+        <div id="menu">
+            <a href="./start.html"><div class="but">HOME</div></a>
+            <div class="but" onclick="resetScore()">RESET SCORE</div>
+            <div class="but" onclick="nextGame()">NEXT GAME</div>
+        </div>
+        <div id="goBack" onclick="themeSelect()"><img src="./Multimedia/goBack.png" style="cursor: pointer;width: 7vw;transform: rotate(180deg);"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JavaScript.js" defer></script>
+    <link  rel="stylesheet" href="Css.css" >
+</head>
+<body>
+    <header><h1>Würfelspiele</h1></header>
+    <h1>Spieler Namen</h1>
+    <div>
+        <label>Spieler1: </label>
+        <input type="text" id="player1" value="Spieler1">
+        <label>Spieler2: </label>
+        <input type="text" id="player2" value="Spieler2">
+    </div>
+    <div onclick="getValue()"><p onclick="getValue()">Speichern</p></div>
+    <div id="output"></div> 
+    <div onclick="nextRound()" class="buttons"><p>Press here next round</p></div>
+    <div onclick="restart()" class="buttons"><p>Restart ?</p></div>
+    <div onclick="endIt()" class="buttons"><p>End Game ?</p></div>
+</body>
+</html>

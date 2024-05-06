@@ -1,0 +1,257 @@
+header{
+    background-color: black;
+    color: white;
+    width: 96vw;
+    height: 5vh;
+    font-family: sans-serif;
+    font-size: x-large;
+    text-align: center;
+    padding: 5vh;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 5vw 20vw 10vw 30vw 10vw 20vw 5vw;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url("./Multimedia/neutralWallpaper.gif");
+    background-size:cover;
+    background-position: top;
+}
+#main{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.7);
+    grid-template-columns: 12vw 12vw 12vw;
+    grid-template-rows: 20vh 20vh 20vh;
+    border: 0.5vw solid black;
+    width: 36vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+.box{
+    border: 0.5vw solid black;
+}
+#circle{
+    margin: 1vw;
+    margin-top: 34vh;
+    margin-bottom: 19vh;
+    margin-left: 14vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-size: cover;
+    background-position:0%;
+}
+#cross{
+    background-position:0%;
+    background-size: cover;
+    margin: 1vw;
+    margin-top: 34vh;
+    margin-bottom: 19vh;
+    margin-right: 14vw;
+    width: 10vw;
+    border-radius: 1vw;
+}
+#game{
+    display: none;
+}
+#img{
+    width: 11.1vw;
+    height: 18.4vh;
+}
+
+@keyframes wrong{
+    0% { transform: translate(1px) ; }
+    10% { transform: translate(-1px); }
+    20% { transform: translate(-3px); }
+    30% { transform: translate(3px); }
+    40% { transform: translate(1px); }
+    50% { transform: translate(-1px); }
+    60% { transform: translate(-3px); }
+    70% { transform: translate(3px); }
+    80% { transform: translate(-1px); }
+    90% { transform: translate(1px); }
+    100% { transform: translate(1px); }
+}
+.wrong{
+    animation: wrong  0.2s none 1;
+}
+#themeMain{
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: 20vw 1vw 20vw 1vw 20vw;
+    grid-template-rows: 30vh 30vh;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 1vw;
+}
+#theme1{
+    background-image: url('./Multimedia/cPWallpaper.gif');
+}
+#theme2{
+    background-image: url('./Multimedia/lWallpaper.gif');
+}
+#theme3{
+    background-image: url('./Multimedia/cHWallpaper.gif');
+}
+#theme4{
+    background-image: url('./Multimedia/jWallpaper.gif');
+
+}
+#theme5{
+    background-image: url('./Multimedia/nWallpaper.gif');
+}
+#theme6{
+    background-image: url('./Multimedia/pWallpaper.gif');
+}
+.theme{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-size: cover;
+    margin: 0.5vw;
+    border-radius: 0.5vw;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+.theme:hover{
+    transform: scale(110%);
+    opacity: 1;
+    cursor: pointer;
+}
+#head{
+    width: 60vw;
+    font-size:1em;
+    display:inline-block;
+    text-shadow:-1px -1px 10px #fff,
+      -1px -1px 10px #fff,
+      0 0 20px #ff00de,
+      0 0 40px #ff00de,
+      0 0 60px #ff00de,
+      0 0 80px #ff00de;
+    border: 1px solid white;
+    box-shadow: inset 0px 0px 5px #fff,
+      0px 0px 5px #fff,
+      0 0 10px #ff00de,
+      inset 0 0 10px #ff00de,
+      0 0 20px 2px #ff00de,
+      inset 0 0 20px  2px #ff00de;
+    margin: 1vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+#menu{
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 18vh;
+    padding: 1vw;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 0.2vw;
+    color: black;
+    display: none;
+    width: 40vw;
+    height: 31vh;
+}
+.but{
+    background-color: black;
+    color: white;
+    border-radius: 0.2vw;
+    text-align: center;
+    font-size: 2em;
+    margin: 1vw;
+    padding: 1vw;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-size: cover;
+}
+.but:hover{
+    color: rgb(117, 255, 135);
+    background-color: rgb(137, 137, 137);
+}
+#cO{
+    margin-top: -3vh;
+    font-size: 3.5em;
+}
+#cX{
+    margin-top: -3vh;
+    font-size: 3.5em;
+}
+a{
+    text-decoration: none;
+}
+#link{
+    animation: glow 0.9s ease-in-out infinite alternate;
+}
+#linkToGame{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 0.2vw;
+    margin: 2vw;
+    padding: 1vw;
+    font-size: 4.5em;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#linkToGame:hover {
+    background-color: rgb(99, 99, 99);
+    color: rgb(255, 255, 255);
+}
+#rules{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 2vw;
+    border-radius: 0.2vw;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    padding: 2vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+}
+#rulesHead{
+    font-size: 1.7em;
+    text-align: center;
+    text-decoration: underline;
+}
+#goBack{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: white;
+    margin: 0.5vw;
+    border-radius: 0.2vw;
+    padding: -1vw;
+    cursor: pointer;
+}
+#goBack:hover{
+    transform: scale(110%);
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+p{
+    margin: 0;
+    padding: 0;
+}

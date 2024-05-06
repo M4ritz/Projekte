@@ -1,0 +1,133 @@
+#main{
+	display: grid;
+	grid-template-columns: 6vw 20vw 20vw 20vw 20vw 6vw;
+	margin: 2vw;
+	grid-gap: 0.5vw;
+}
+.movieSmall{
+	width: 20vw;
+	height: 50vh;
+	cursor: pointer;
+}
+.cover{
+	width: 20vw;
+	height: 50vh;
+	border: 1px black solid;
+}
+header{
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	padding: 2vw;
+	margin: 0;
+	display: flex;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+#movie,#actor{
+	width: 96vw;
+	font-family: sans-serif;
+	background-color: rgba(0, 0, 0, 0.219);
+	padding: 1vw;
+}
+#actor{
+	display: flex;
+}
+#actorPhoto{
+	width: 20vw;
+	border-radius: 3px;
+}
+iframe{
+	width: 56vw;
+	height: 30vw;
+}
+#info{
+	margin:1vw;
+	padding: 1vw;
+	background-color: white;
+	border-radius: 3px;
+}
+.info{
+	margin: 1vw;
+	background-color: rgba(0, 0, 0, 0.52);
+	width: 94;
+	border-radius: 2px;
+	padding: 1vw;
+	color: white;
+	display: flex;
+}
+p{
+	margin-left: 4vw;
+}
+#back{
+	margin-left: 75vw;
+	cursor: pointer;
+}
+.actor{
+	width: 15vw;
+	position: relative;
+    display: inline-block;
+}
+#overlay-text {
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  background-color: #000000; 
+  color: #fff; 
+  padding: 1.5vw 1vw; 
+  font-size: 20px; 
+  text-align: center;
+  width: 8vw;
+  height: 7vh;
+  margin-left: 5vw;
+  border-radius:0 0 20% 20%;
+}
+#overlay-text-Movie {
+	position: absolute;
+	transform: translate(0, -50%); 
+	background-color: #000000; 
+	color: #fff; 
+	padding: 1.5vw 1vw; 
+	font-size: 20px; 
+	text-align: center;
+	width: 13vw;
+	height: 7vh;
+	margin-left: 5vw;
+	border-radius:0 0 20% 20%;
+  }
+a{
+	color: white;
+}
+body{
+	background-image: url('./../background.png');
+	background-size: cover;
+}
+.right{
+	width: 2vw;
+}
+.left{
+	transform: scale(-1);
+	width: 2vw;
+}
+.blackBar{
+	padding: 1vw;
+	margin:1vw;
+	align-items: center;
+	display: flex;
+}
+.heading{
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	padding: 0.5vw;
+	text-align: center;
+	margin-top: 2vh;
+}
+.line{
+	margin-top: 2vh;
+	background-color: black;
+}
+#name{
+	margin-left: 2vw;
+}
